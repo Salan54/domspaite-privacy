@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de confidentialité — Hermes Domspaite</title>
+<style>
+  :root { --navy:#16213e; --blue:#0f3460; --orange:#f7931a; --grey:#57606f; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#f8f9fa; color:#1a1a2e;
+         font:15.5px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; }
+  .wrap { max-width:760px; margin:0 auto; padding:48px 24px 64px; }
+  .card { background:#fff; border-radius:12px; padding:36px 40px;
+          box-shadow:0 2px 10px rgba(0,0,0,.07); }
+  h1 { font-size:24px; margin:0 0 6px; color:var(--navy); }
+  .sub { color:var(--grey); font-size:14px; margin-bottom:6px; }
+  .rule { height:3px; width:64px; background:var(--orange); border-radius:2px; margin:18px 0 26px; }
+  h2 { font-size:15px; color:var(--blue); margin:30px 0 10px;
+       text-transform:uppercase; letter-spacing:.06em; }
+  table { width:100%; border-collapse:collapse; margin:12px 0 18px; font-size:14px; }
+  th { background:var(--navy); color:#fff; text-align:left; padding:9px 12px; font-weight:600; }
+  td { padding:9px 12px; border-bottom:1px solid #e6e9ef; vertical-align:top; }
+  tr:nth-child(even) td { background:#f8f9fa; }
+  code { background:#f0f2f5; padding:1px 5px; border-radius:3px; font-size:13px; }
+  a { color:var(--blue); }
+  .foot { color:var(--grey); font-size:13px; margin-top:30px; padding-top:16px;
+          border-top:1px solid #e6e9ef; }
+</style>
+</head>
+<body>
+<div class="wrap"><div class="card">
+  <h1>Politique de confidentialité</h1>
+  <div class="sub">Application « Hermes Domspaite » — usage personnel</div>
+  <div class="rule"></div>
+
+  <h2>1. Responsable du traitement</h2>
+  <p>Cette application est un outil personnel dont l'unique utilisateur est également
+  l'exploitant et le responsable de traitement :
+  <a href="mailto:alain.spaite@domspaite.com">alain.spaite@domspaite.com</a>.
+  Elle n'est ouverte à aucun autre utilisateur et ne collecte aucune donnée
+  concernant des tiers.</p>
+
+  <h2>2. Données Google consultées</h2>
+  <p>L'application accède aux données du compte Google de son propriétaire, uniquement
+  après consentement explicite via l'écran de consentement OAuth de Google, et pour les
+  finalités suivantes :</p>
+  <table>
+    <tr><th>Portée (scope)</th><th>Données</th><th>Finalité</th></tr>
+    <tr>
+      <td><code>calendar</code></td>
+      <td>Événements, titres, horaires, lieux des calendriers du propriétaire</td>
+      <td>Afficher l'agenda du jour dans un rapport quotidien envoyé par courriel au propriétaire</td>
+    </tr>
+    <tr>
+      <td><code>gmail.readonly</code><br><code>gmail.modify</code></td>
+      <td>Messages du compte, libellés</td>
+      <td>Rechercher et classer les courriels du propriétaire à sa demande</td>
+    </tr>
+    <tr>
+      <td><code>gmail.send</code></td>
+      <td>Envoi de courriels</td>
+      <td>Expédier au propriétaire ses propres rapports automatisés</td>
+    </tr>
+    <tr>
+      <td><code>drive</code></td>
+      <td>Fichiers et dossiers du Drive</td>
+      <td>Sauvegarder et retrouver les documents du propriétaire</td>
+    </tr>
+    <tr>
+      <td><code>spreadsheets</code><br><code>documents</code></td>
+      <td>Contenu des feuilles de calcul et documents</td>
+      <td>Lire et mettre à jour les tableaux de suivi du propriétaire</td>
+    </tr>
+    <tr>
+      <td><code>contacts.readonly</code></td>
+      <td>Noms et adresses des contacts</td>
+      <td>Identifier l'expéditeur d'un courriel</td>
+    </tr>
+  </table>
+  <p>Aucune autre donnée n'est demandée : ni position, ni données de santé,
+  ni données d'autres utilisateurs.</p>
+
+  <h2>3. Utilisation et partage</h2>
+  <p>Les données sont utilisées <strong>exclusivement pour le propriétaire du compte</strong>.
+  Elles ne sont ni vendues, ni louées, ni transmises à des tiers, ni utilisées à des fins
+  publicitaires, ni exploitées pour entraîner des modèles d'apprentissage automatique.</p>
+  <p>L'application respecte la
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Politique
+  relative aux données utilisateur des services API Google</a>, y compris ses exigences
+  d'utilisation limitée (<em>Limited Use</em>) : les données obtenues via les API Google
+  ne sont utilisées que pour fournir les fonctionnalités décrites ci-dessus, à l'utilisateur
+  qui a consenti.</p>
+
+  <h2>4. Stockage, sécurité et conservation</h2>
+  <p>Les données sont traitées sur un serveur privé appartenant au propriétaire
+  (auto-hébergement), accessible par lui seul, avec accès réseau restreint.
+  Les jetons d'authentification OAuth sont stockés dans un fichier lisible uniquement
+  par son compte système, et le mot de passe de messagerie est conservé dans un
+  gestionnaire de secrets local.</p>
+  <p>Les données sont conservées le temps nécessaire au fonctionnement des rapports
+  (au maximum quelques semaines pour les données mises en cache) et peuvent être
+  supprimées à tout moment par le propriétaire.</p>
+
+  <h2>5. Vos droits</h2>
+  <ul>
+    <li>Consulter, corriger ou supprimer les données : elles appartiennent au propriétaire,
+        qui y accède directement dans son compte Google.</li>
+    <li><strong>Révoquer l'accès de l'application à tout moment</strong> :
+        <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+        La révocation supprime immédiatement la validité des jetons détenus.</li>
+    <li>Supprimer l'ensemble des données locales : suppression du répertoire de
+        l'application sur le serveur du propriétaire.</li>
+  </ul>
+
+  <h2>6. Cookies et traceurs</h2>
+  <p>L'application n'utilise aucun cookie publicitaire, aucun traceur analytique
+  et aucun outil de suivi tiers.</p>
+
+  <h2>7. Modifications</h2>
+  <p>Toute évolution de cette politique sera publiée sur cette page, avec sa date de
+  mise à jour.</p>
+
+  <h2>8. Contact</h2>
+  <p>Pour toute question relative à ces traitements :
+  <a href="mailto:alain.spaite@domspaite.com">alain.spaite@domspaite.com</a></p>
+
+  <div class="foot">
+    Dernière mise à jour : 9 novembre 2026 ·
+    <a href="./index.html">Retour à la présentation</a>
+  </div>
+</div></div>
+</body>
+</html>
